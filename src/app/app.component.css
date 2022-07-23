@@ -1,0 +1,29 @@
+*{
+    background-color: rgb(240,228,178);
+}
+.disappear {
+    display: none;
+}
+ul {
+    list-style-type: none;
+    margin-bottom: 35px;
+}
+li {
+    border: 1px solid rgb(39,35,51);
+    width: 100px;
+    padding-left: 15px;
+    padding: 5px 0px 5px 15px;
+    border-radius: 5px;
+}
+a {
+    font-size: 20px;
+    height: 21px;
+    color: rgb(98,79,95);
+}
+a:link {
+    text-decoration: none;
+}
+li > a.active {
+    color: rgb(205,185,71);
+}
+/* rgb(98,79,95) */

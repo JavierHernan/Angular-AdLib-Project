@@ -1,0 +1,18 @@
+<div class="form" [formGroup]="form">
+    <div class="input-error-container">
+        <div class="input-section-container">
+            <div class="input-section">
+                <label [attr.for]="question.key">{{question.label}}</label>
+                <div [ngSwitch]="question.controlType">
+                    <input class="input-sections" *ngSwitchCase="'textbox'" [formControlName]="question.key" [id]="question.key" [type]="question.type">
+                    <select class="input-sections" [id]="question.key" *ngSwitchCase="'dropdown'" [formControlName]="question.key">
+                        <option *ngFor="let opt of question.options" [value]="opt.key">
+                            {{opt.value}}
+                        </option>
+                    </select> 
+                </div>  
+            </div>
+        </div>
+        <!-- <div class="errorMessage" *ngIf="!isValid">{{question.label}} is required</div> -->
+    </div>
+</div>

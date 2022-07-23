@@ -1,0 +1,29 @@
+  <ul>
+    <!-- <li><a routerLink="/app-home" routerLinkActive="activeClass">Home</a></li>
+    <li><a routerLink="/app-reactive-component" routerLinkActive="activeClass" >ReactiveComponentComponent</a></li>
+    <li><a routerLink="/app-reactive-component-template-driven" routerLinkActive="activeClass">ReactiveComponentTemplateDrivenComponent</a></li>
+    <li><a routerLink="/app-reactive-comp-reactive-driven" routerLinkActive="activeClass">ReactiveCompReactiveDrivenComponent</a></li>
+    <li><a routerLink="/app-reactive-driven-form-builder" routerLinkActive="activeClass">ReactiveDrivenFormBuilderComponent</a></li>
+    <li><a routerLink="/app-dynamic-form" routerLinkActive="activeClass">DynamicFormComponent</a></li> -->
+    <!--(click)="navigate()" routerLink="/app-dynamic-form" routerLinkActive="activeClass"  -->
+  
+    <li><a routerLink="/app-home" routerLinkActive="active">Home</a></li>
+    <li><a routerLink="/app-reactive-component" routerLinkActive="active" >Level 1</a></li>
+    <!-- ReactiveComponentComponent -->
+    <li><a routerLink="/app-reactive-component-template-driven" routerLinkActive="active">Level 2</a></li>
+    <!-- ReactiveComponentTemplateDrivenComponent -->
+    <li><a routerLink="/app-reactive-comp-reactive-driven" routerLinkActive="active">Level 3</a></li>
+    <!-- ReactiveCompReactiveDrivenComponent -->
+    <li><a routerLink="/app-reactive-driven-form-builder" routerLinkActive="active">Level 4</a></li>
+    <!-- ReactiveDrivenFormBuilderComponent -->
+    <li><a routerLink="/app-dynamic-form" routerLinkActive="active">Level 5</a></li>
+    <!-- DynamicFormComponent -->
+    <!-- *ngFor="let question of questions$ | async" -->
+  </ul>
+
+<div>
+  <!-- <app-dynamic-form [questions123]="questions$ | async"></app-dynamic-form> -->
+  <router-outlet></router-outlet>
+</div>
+  
+

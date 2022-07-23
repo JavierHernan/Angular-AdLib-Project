@@ -1,0 +1,17 @@
+<div>
+    <form (ngSubmit)="onSubmit()" [formGroup]="form">
+        <div>
+            <!-- <div *ngIf="payLoad"> -->
+                <div class="display-text">There once was a {{firstNoun}} that {{firstVerb}} on the {{secondNoun}}. <br>
+                    The {{firstNoun}} had a brother that was a {{thirdNoun}}, who was quite talented at {{secondVerb}}
+                </div>
+            </div>
+        <div *ngFor="let question of questions123">
+            <app-dynamic-form-input [question]="question" [form]="form"></app-dynamic-form-input>
+        </div>
+        <div class="btn-container">
+            <button class="submit-btn" type="submit" [disabled]="!form.valid">Submit</button>
+        </div>
+    </form>
+    
+</div>

@@ -1,0 +1,17 @@
+<!-- <p>reactive-component-template-driven works!</p> -->
+
+
+<div class="display-text">
+    There once was a {{nameInputDisplay !== '' ? nameInputDisplay : empty}} that was {{adjectiveInputDisplay !== '' ? adjectiveInputDisplay : empty}}
+</div>
+
+<div (keyup.enter)="submit1()" class="input-section">
+    <div class="input-container">
+        <input class="input-noun input" placeholder="Type a noun" type="text" [(ngModel)]="nameInput">
+        <input class="input-adjective input" placeholder="Type a adjective" type="text" [(ngModel)]="adjectiveInput"> 
+    </div>
+</div>
+
+<div class="btn-container">
+    <button class="submit-btn" type="button" (click)="submit1()">Submit</button>
+</div>

@@ -1,0 +1,21 @@
+<form [formGroup]="nounForm" (ngSubmit)="updateAdLib()" (keyup.enter)="updateAdLib()" class="form">
+    <div class="display-text">There once was a {{noun1}} that {{verb1}} around a {{noun2}}.</div>
+
+    <div class="input-section">
+        <div class="input-sections">
+            <label class="label" >Enter a Noun</label>
+            <input placeholder="Type a noun" type="text" formControlName="nounOne" />
+        </div>
+        <div class="input-sections  label-under">
+            <label class="label">Enter a Verb</label>
+            <input placeholder="Type a verb" type="text" formControlName="verbOne" />
+        </div>
+        <div class="input-sections  label-under">
+            <label class="label">Enter Another Noun</label>
+            <input placeholder="Type another noun" type="text" formControlName="nounTwo" />
+        </div>
+    </div>
+    <div class="btn-container">
+        <button class="submit-btn" type="button" (click)="updateAdLib()" >Submit</button>
+    </div>
+</form>

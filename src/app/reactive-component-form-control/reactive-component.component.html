@@ -1,0 +1,16 @@
+<!-- THIS IS JUST USING FORMCONTROL -->
+<div class="display-text">
+    There once was a {{valueName !== '' ? valueName : empty}} that was {{valueAdjective !== '' ? valueAdjective : empty}}.
+</div>
+
+<div (keyup.enter)="submit()" class="input-section">
+    <div class="input-container">
+        <label for="reactiveControl" ></label> <!-- for="reactiveControl" is nonessential-->
+        <input class="input-noun input" type="text" [formControl]="reactiveControl" placeholder="Type a noun"/>
+        <input class="input-adjective input" type="text" [formControl]="anotherReactiveControl" placeholder="Type a adjective">
+    </div>
+</div>
+
+<div class="btn-container">
+    <button class="submit-btn" type="button" (click)="submit()">Submit</button>
+</div>

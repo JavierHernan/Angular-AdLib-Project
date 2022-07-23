@@ -1,0 +1,33 @@
+.form {
+    /* margin-top: 35px; */
+}
+.input-error-container {
+    /* border: 1px solid black; */
+    margin-bottom: 15px;
+    text-align: center;
+}
+.input-section-container {
+    /* border: 1px solid black; */
+    /* margin-top: 35px; */
+    display: flex;
+    justify-content: center;
+}
+.input-section {
+    /* border: 1px solid black; */
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 350px;
+}
+label {
+    float: left;
+    font-size: 20px;
+    color: rgb(98,79,95);
+}
+.input-sections {
+    /* border: 1px solid black; */
+    width: 150px;
+    height: 24px;
+    float: right;
+    /* border: 2px solid rgb(39,35,51); */
+    border-radius: 5px;
+}

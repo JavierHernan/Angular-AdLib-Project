@@ -1,0 +1,29 @@
+<form [formGroup]="entryForm" (keyup.enter)="onSubmit" (ngSubmit)="onSubmit()">
+    <div class="display-text">There once was a {{nOne}} that liked to {{vOne}} around a {{nTwo}} that liked to {{vTwo}}</div>
+    <div  class="input-section">
+        <div class="input-sections label-under">
+        <label>Enter a Noun</label>
+        <input type="text" formControlName="nOne"/>
+        </div>
+
+        <div class="input-sections label-under">
+        <label> Enter a Noun</label>
+        <input type="text" formControlName="nTwo"/>
+        </div>
+        <div formGroupName="entryVerbs">
+            <div class="input-sections label-under">
+            <label>Enter a Verb</label>
+            <input type="text" formControlName="vOne"/>
+            </div>
+
+            <div class="input-sections label-under">
+            <label>Enter a Verb</label>
+            <input type="text" formControlName="vTwo"/>
+            </div>
+        </div>
+    </div>
+    <div class="btn-container">
+        <button class="submit-btn" type="button" (click)="onSubmit()" >Submit</button>
+    </div>
+    
+</form>
